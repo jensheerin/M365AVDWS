@@ -28,20 +28,6 @@
       "properties": {
         "securityRules": [
           {
-            "name": "allow_RDP_to_AD_Servers",
-            "properties": {
-              "description": "Allow RDP to AD Servers",
-              "protocol": "Tcp",
-              "sourcePortRange": "*",
-              "destinationPortRange": "3389",
-              "sourceAddressPrefix": "*",
-              "destinationAddressPrefix": "[variables('adSubnetRange')]",
-              "access": "Allow",
-              "priority": 120,
-              "direction": "Inbound"
-            }
-          },
-          {
             "name": "allow_AD_SMTP",
             "properties": {
               "description": "Allow AD Communication",
